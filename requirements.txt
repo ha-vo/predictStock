@@ -1,4 +1,4 @@
 plotly==5.7.0
-sklearn
+scikit-learn
 pandas==1.5.3
 yahoo_fin
