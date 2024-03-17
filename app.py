@@ -93,8 +93,8 @@ st.subheader("MACD, SIGNAL LINE AND HISTOGRAM")
 index = [i for i in range(1,len(macd_line)+1)]
 
 fig2 = go.Figure()
-fig2.add_trace(go.Scatter(x=index, y=macd_line, mode='lines', name='MACD Line'))
-fig2.add_trace(go.Scatter(x=index, y=signal_line, mode='lines', name='SIGNAL Line'))
+fig2.add_trace(go.Scatter(x=index, y=macd_line, mode='lines', name='MACD Line',line=dict(color='green', width=2)))
+fig2.add_trace(go.Scatter(x=index, y=signal_line, mode='lines', name='SIGNAL Line', line=dict(color='red', width=2)))
 fig2.add_trace(go.Bar(x=index, y=histogram, name='Histogram'))
 
 fig2.update_layout(
